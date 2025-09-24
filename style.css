@@ -1,0 +1,313 @@
+/* =================================
+   section: Global reset
+   ================================= */
+body{
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-div
+{
+    max-width: 1000px;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+}
+
+/* =================================
+    section: Header style
+   ================================= */
+#mypage-header{
+    min-height: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    transition: all 0.7s ease;
+    background-color: #6e6e68;
+
+}
+
+/* =================================
+   section: Center page style
+   ================================= */
+#mypage-body{
+    padding: 0px 10px 0px 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.center-content-headers{
+    font-size: 20px; 
+}
+
+
+/* =================================
+   section: Left navigation style
+   ================================= */
+.mypage-leftnav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left-nav {
+    background-color: #6e6e68;
+}
+.leftnav-names{
+    text-align: center;
+}
+
+
+/* ===================================
+   section: center content page style
+   =================================== */
+.mypage-center-content{
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    align-items: center;
+    line-height: 1.6;
+}
+.mypage-content {
+    background-color: lightgray;;
+}
+
+/* =================================
+   section: Footer style
+   ================================= */
+#mypage-footer{
+    min-height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    background-color: #6e6e68;
+    transition: all 0.1s ease;
+}
+#footer-title{
+    font-weight: 600;
+    font-size: large;
+    margin-top: 12px;
+}
+#footer-body{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.footer-name {
+    font-size: 24px;
+}
+.footer-content{
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+}
+
+   /* =================================
+   container section
+   ================================= */
+#js-wrapper{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+ /* =================================
+  javascript section
+   ================================= */
+.title{
+    text-align: center;
+    padding: 30px 10px 0px 10px;
+    font-size: 24px;
+}
+.max-container{
+    padding: 30px;
+    width: 450px;
+}
+#max, #stringreverse, #longest-word, #cookies{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form-group{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.lebel-data, #button{
+    font-weight: 600;
+}
+
+.input-field{
+    padding: 10px;
+    border-radius: 3px;
+}
+.button{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    font-weight: 600;
+    background-color: red;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+#num1-error, #num2-error, #string-error, #longest-word-string-error, #name-error, #phone-error {
+    color: red;
+    font-size: small;
+    font-weight: 400;
+    margin-top: -5px;
+}
+#error-max, #global-error, #stringreverse-error, #longest-word-error{
+    color: red;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+.require-symbol{
+    color: red;
+}
+#message-container, #global-error{
+    display: flex;
+    justify-content: center;
+}
+#max-value, #stringreverse-result, #longest-word-result,#cookie-result{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    word-break: break-word;
+}
+
+/* =================================
+   section: Responsive page style
+   ================================= */
+@media (max-width: 576px) {
+    
+    /* =================================
+   section: Header style
+   ================================= */
+    #header-name{
+        font-size: 26px;
+    }
+
+    /* =================================
+   section: Center page style
+   ================================= */
+    .mypage-content{
+        flex-direction: column;
+    }
+    .mypage-center-content{
+        font-size: small;
+    }
+
+    .leftnav-names{
+        font-size: 20px;
+    }
+    .center-content-headers{
+        font-size: 12px; 
+    }
+    .nav-link {
+        width: 45px;
+    }
+    /* =================================
+    JavaScript
+
+    max container section
+    ================================= */
+   .max-container{
+    max-width: 200px;
+    padding: 25px;
+   }
+
+   #longest_word_button{
+    margin-top: 18px;
+   }
+}
+
+
+  /* =================================
+        JQuery section
+    ================================= */
+
+
+ /* =================================
+        background color
+    ================================= */
+/* backgound color for containers */
+.border-box.highlight-bg{
+    background-color: lightgray;
+    border-radius: 18px;
+    
+}
+/* border color for buttons */
+.button-bg{
+    background-color: #6e6e68;
+    font-weight: 600;
+    font-size: medium;
+}
+
+/* reference section heading */
+.reference-section-heading{
+    font-weight: 600;
+}
+
+ /* =================================
+        removing borders
+    ================================= */
+/* removing border for all input fields */
+#max-num1.input-field-border,
+#max-num2.input-field-border,
+#stringInput.input-field-border,
+#input-string.input-field-border,
+#name.input-field-border,
+#phone.input-field-border{
+    border: none;
+    outline: none;
+}
+
+/* hiding the reference part */
+#reference{
+    display: none;
+}
+
+/* =========================
+    jquery2 exercise
+=========================== */
+
+/* ========================
+    header part
+   ========================*/
+.header-shrink {
+  height: 10px;
+  overflow: hidden;
+  transition: height 0.5s ease; 
+}
+
+.header-expand{
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+/* ========================
+    footer part
+  ==========================*/
+#mypage-footer {
+    min-height: 10px;
+    overflow: hidden;
+    background-color: #6e6e68;
+    transition: all 0.9s ease;
+}
+
+#mypage-footer-content {
+    display: none;
+}

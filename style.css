@@ -175,7 +175,7 @@ body{
 .require-symbol{
     color: red;
 }
-#message-container, #global-error{
+.message-container, #global-error{
     display: flex;
     justify-content: center;
 }

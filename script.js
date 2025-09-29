@@ -275,5 +275,37 @@ function load_cookie_details() {
     }
 }
 
+// Suggesting section
+var availableOptions = ["Apple","Banana","Orange","Kiwi","Umashankar"];
+    function split(val) {
+        return val.split(/,\s*/);
+    }
+    function extractLast(term) {
+        return split(term).pop();
+    }
+    $("#input-string").autocomplete({
+        minLength: 0,
+        source: function(request, response) {
+            var term = extractLast(request.term);
+            response($.ui.autocomplete.filter(availableOptions, term));
+        },
+        focus: function() {
+            return false;
+        },
+        select: function(event, ui) {
+            var terms = split(this.value);
+            terms.pop();
+            terms.push(ui.item.value);
+            terms.push("");
+            this.value = terms.join(", ");
+            return false;
+        }
+    })
+    .on('focus click', function() {
+        $(this).autocomplete("search", extractLast(this.value));
+    });
+
+
+
 // load the page and execute the function
 window.onload = load_cookie_details;

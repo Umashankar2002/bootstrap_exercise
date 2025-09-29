@@ -311,3 +311,11 @@ body{
 #mypage-footer-content {
     display: none;
 }
+
+.nav-link {
+    height: 65px;
+}
+
+#myTab {
+    gap: 10px;
+}
